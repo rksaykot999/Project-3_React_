@@ -1,7 +1,8 @@
 import React from 'react'
 import Card from './Card';
 
-export default function Header() {
+export default function Header({cart}) {
+   
     const onChangeHandelar = (e) => {
         console.log(e.target.value);
     };
@@ -18,7 +19,7 @@ export default function Header() {
 
                 <ul  className='flex '>
                     {
-                        navigation.map((item) => <li><a className='p-5 btn btn-ghost' href="">{item}</a></li>)
+                        navigation.map((item,index) => <li key={index}><a className='p-5 btn btn-ghost' href="">{item}</a></li>)
                     }
                 </ul>
 
@@ -30,7 +31,7 @@ export default function Header() {
                         <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                     </svg>
                 </div>
-                <Card></Card>
+                <Card cart={cart}></Card>
 
 
                 <div className="dropdown dropdown-end">
