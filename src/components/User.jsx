@@ -15,8 +15,8 @@ export default function User() {
       <h1 className='text-4xl '>All Users</h1>
       <h2 className='text-2xl mt-2'>The number is {value} </h2>
       <div className='mt-4'>
-        <button onClick={handleDecrease} className='btn btn-secondary mr-8 text-white'>Decrease</button>
-        <button onClick={handleIncrease} className='btn btn-primary text-white'>Increase</button>
+        <button onClick={handleDecrease} className='btn btn-secondary mr-8 text-white'> Decrease </button>
+        <button onClick={handleIncrease} className='btn btn-primary text-white'> Increase </button>
       </div>
     </div>
   )
